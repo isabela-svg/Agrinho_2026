@@ -1,45 +1,90 @@
-// Modo escuro
+const darkBtn = document.getElementById("darkMode");
 
-const botao = document.getElementById("darkMode");
-
-botao.addEventListener("click", () => {
+darkBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
 
-// Contador
+/* SCROLL */
+function scrollToQuiz(){
+    document.getElementById("quiz").scrollIntoView({behavior:"smooth"});
+}
 
-let numero = 0;
-
-const contador = document.getElementById("contador");
-
-const animacao = setInterval(() => {
-
-    numero += 10;
-
-    contador.textContent = numero;
-
-    if(numero >= 1000){
-        clearInterval(animacao);
+/* QUIZ */
+const questions = [
+    {
+        q: "What helps protect soil?",
+        a: [
+            {text:"No-till farming", correct:true},
+            {text:"Deforestation", correct:false},
+            {text:"Burning fields", correct:false}
+        ]
+    },
+    {
+        q: "Best technology in farming?",
+        a: [
+            {text:"Artificial Intelligence", correct:true},
+            {text:"Random cutting", correct:false},
+            {text:"Waste burning", correct:false}
+        ]
+    },
+    {
+        q: "What is sustainability?",
+        a: [
+            {text:"Protecting nature", correct:true},
+            {text:"Destroying forests", correct:false},
+            {text:"Ignoring soil health", correct:false}
+        ]
     }
+];
 
-}, 20);
+let current = 0;
+let score = 0;
 
-// Quiz
+const questionEl = document.getElementById("question");
+const answersEl = document.getElementById("answers");
+const progress = document.getElementById("progress");
+const nextBtn = document.getElementById("nextBtn");
 
-function resposta(tipo){
+function loadQuestion(){
+    let q = questions[current];
+    questionEl.textContent = q.q;
+    answersEl.innerHTML = "";
 
-    const resultado =
-    document.getElementById("resultado");
+    q.a.forEach(ans => {
+        const btn = document.createElement("button");
+        btn.textContent = ans.text;
 
-    if(tipo === "correta"){
-        resultado.innerHTML =
-        "✅ Correto! O plantio direto ajuda a preservar o solo.";
-        resultado.style.color = "green";
-    }
+        btn.onclick = () => {
+            if(ans.correct) score++;
+            nextBtn.style.display = "block";
+        };
 
-    else{
-        resultado.innerHTML =
-        "❌ Incorreto! O desmatamento prejudica o meio ambiente.";
-        resultado.style.color = "red";
+        answersEl.appendChild(btn);
+    });
+
+    progress.style.width = ((current)/questions.length)*100 + "%";
+}
+
+function nextQuestion(){
+    current++;
+
+    if(current < questions.length){
+        loadQuestion();
+        nextBtn.style.display = "none";
+    } else {
+        showResult();
     }
 }
+
+function showResult(){
+    let percent = Math.round((score / questions.length) * 100);
+
+    document.querySelector(".quiz-container").innerHTML = `
+        <h2>Final Result</h2>
+        <h1>${percent}%</h1>
+        <p>${percent >= 70 ? "🌱 Excellent!" : "🌍 Keep learning!"}</p>
+        <p class="tag">#Agrinho 2026 🌱</p>
+    `;
+}
+
+loadQuestion();
