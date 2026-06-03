@@ -12,27 +12,27 @@ function scrollToQuiz(){
 /* QUIZ */
 const questions = [
     {
-        q: "What helps protect soil?",
+        q: "Qual prática ajuda o solo?",
         a: [
-            {text:"No-till farming", correct:true},
-            {text:"Deforestation", correct:false},
-            {text:"Burning fields", correct:false}
+            {text:"Plantio direto", correct:true},
+            {text:"Desmatamento", correct:false},
+            {text:"Queimada", correct:false}
         ]
     },
     {
-        q: "Best technology in farming?",
+        q: "Qual tecnologia ajuda no campo?",
         a: [
-            {text:"Artificial Intelligence", correct:true},
-            {text:"Random cutting", correct:false},
-            {text:"Waste burning", correct:false}
+            {text:"Drones", correct:true},
+            {text:"Poluição", correct:false},
+            {text:"Desperdício", correct:false}
         ]
     },
     {
-        q: "What is sustainability?",
+        q: "O que é sustentabilidade?",
         a: [
-            {text:"Protecting nature", correct:true},
-            {text:"Destroying forests", correct:false},
-            {text:"Ignoring soil health", correct:false}
+            {text:"Preservar o meio ambiente", correct:true},
+            {text:"Destruir florestas", correct:false},
+            {text:"Poluir rios", correct:false}
         ]
     }
 ];
@@ -80,9 +80,9 @@ function showResult(){
     let percent = Math.round((score / questions.length) * 100);
 
     document.querySelector(".quiz-container").innerHTML = `
-        <h2>Final Result</h2>
+        <h2>Resultado Final</h2>
         <h1>${percent}%</h1>
-        <p>${percent >= 70 ? "🌱 Excellent!" : "🌍 Keep learning!"}</p>
+        <p>${percent >= 70 ? "🌱 Excelente conhecimento!" : "🌍 Continue aprendendo!"}</p>
         <p class="tag">#Agrinho 2026 🌱</p>
     `;
 }
