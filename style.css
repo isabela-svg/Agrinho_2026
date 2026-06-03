@@ -17,7 +17,6 @@ header{
     padding:15px;
     position:sticky;
     top:0;
-    z-index:1000;
 }
 
 nav{
@@ -68,7 +67,7 @@ nav a{
     cursor:pointer;
 }
 
-/* SECTIONS */
+/* SEÇÕES */
 section{
     padding:70px 10%;
 }
@@ -76,22 +75,6 @@ section{
 h2{
     margin-bottom:20px;
     color:#1b5e20;
-}
-
-/* STATS */
-.stats{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-}
-
-.stat-box{
-    flex:1;
-    min-width:200px;
-    background:white;
-    padding:20px;
-    border-radius:15px;
-    text-align:center;
 }
 
 /* CARDS */
@@ -133,24 +116,12 @@ h2{
     background:#ddd;
     border-radius:20px;
     overflow:hidden;
-    margin-bottom:20px;
 }
 
 #progress{
     height:100%;
     width:0%;
     background:linear-gradient(90deg,#2e7d32,#66bb6a);
-}
-
-#answers button{
-    display:block;
-    width:100%;
-    margin:10px 0;
-    padding:12px;
-    border:none;
-    border-radius:10px;
-    background:#43a047;
-    color:white;
 }
 
 /* FOOTER */
@@ -167,21 +138,9 @@ footer{
     font-weight:bold;
 }
 
-/* TAGS */
+/* TAG */
 .tag{
     margin-top:15px;
     color:#a5d6a7;
     font-weight:bold;
-}
-
-/* DARK MODE */
-.dark{
-    background:#121212;
-    color:white;
-}
-
-.dark .card,
-.dark .stat-box,
-.dark .quiz-container{
-    background:#1e1e1e;
 }
