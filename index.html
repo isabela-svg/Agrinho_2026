@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>🌱 AgroFuturo</h2>
+
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+
+            <button id="darkMode">🌙</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>
+            Produzindo alimentos, preservando a natureza e construindo um amanhã melhor.
+        </p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>
+            A agricultura moderna utiliza tecnologia e responsabilidade ambiental para garantir alimentos de qualidade.
+        </p>
+    </section>
+
+    <section id="sustentabilidade">
+        <h2>Sustentabilidade</h2>
+        <p>
+            A preservação dos recursos naturais é fundamental para o futuro da agricultura.
+        </p>
+
+        <div class="contador">
+            <h3>Árvores preservadas</h3>
+            <span id="contador">0</span>
+        </div>
+    </section>
+
+    <section id="tecnologia">
+        <h2>Tecnologia no Campo</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🚁 Drones</h3>
+                <p>Monitoramento inteligente das plantações.</p>
+            </div>
+
+            <div class="card">
+                <h3>📡 Sensores</h3>
+                <p>Controle da umidade e qualidade do solo.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 IA</h3>
+                <p>Tomada de decisões mais eficientes.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="quiz">
+        <h2>Quiz Sustentável</h2>
+
+        <p>
+            Qual prática ajuda a preservar o meio ambiente?
+        </p>
+
+        <button onclick="resposta('correta')">
+            Plantio Direto
+        </button>
+
+        <button onclick="resposta('errada')">
+            Desmatamento
+        </button>
+
+        <p id="resultado"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 AgroFuturo - Projeto Agrinho</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
