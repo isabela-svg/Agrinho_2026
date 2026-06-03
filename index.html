@@ -1,103 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroFuturo 2026</title>
+    <title>AgroFuture: Sustainable Power</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
-            <h2>🌱 AgroFuturo</h2>
+<header>
+    <nav>
+        <h2>🌱 AgroFuture</h2>
 
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#quiz">Quiz</a></li>
-            </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+        </ul>
 
-            <button id="darkMode">🌙</button>
-        </nav>
-    </header>
+        <button id="darkMode">🌙</button>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h1>Agro Forte, Futuro Sustentável</h1>
-        <p>
-            Produzindo alimentos, preservando a natureza e construindo um amanhã melhor.
-        </p>
-    </section>
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Strong Agriculture, Sustainable Future</h1>
+        <p>Technology, innovation and nature working together for a better world.</p>
 
-    <section id="sobre">
-        <h2>Sobre</h2>
-        <p>
-            A agricultura moderna utiliza tecnologia e responsabilidade ambiental para garantir alimentos de qualidade.
-        </p>
-    </section>
+        <button onclick="scrollToQuiz()">Start Quiz</button>
 
-    <section id="sustentabilidade">
-        <h2>Sustentabilidade</h2>
-        <p>
-            A preservação dos recursos naturais é fundamental para o futuro da agricultura.
-        </p>
+        <p class="tag">#Agrinho 2026 🌱</p>
+    </div>
+</section>
 
-        <div class="contador">
-            <h3>Árvores preservadas</h3>
-            <span id="contador">0</span>
+<!-- ABOUT -->
+<section id="about">
+    <h2>About AgroFuture</h2>
+    <p>
+        AgroFuture represents modern agriculture where technology and sustainability work together
+        to increase production while protecting nature.
+    </p>
+</section>
+
+<!-- SUSTAINABILITY -->
+<section id="sustainability">
+    <h2>Sustainability Impact</h2>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h3>CO₂ Reduced</h3>
+            <span>72%</span>
         </div>
-    </section>
 
-    <section id="tecnologia">
-        <h2>Tecnologia no Campo</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>🚁 Drones</h3>
-                <p>Monitoramento inteligente das plantações.</p>
-            </div>
-
-            <div class="card">
-                <h3>📡 Sensores</h3>
-                <p>Controle da umidade e qualidade do solo.</p>
-            </div>
-
-            <div class="card">
-                <h3>🤖 IA</h3>
-                <p>Tomada de decisões mais eficientes.</p>
-            </div>
-
+        <div class="stat-box">
+            <h3>Water Saved</h3>
+            <span>64%</span>
         </div>
-    </section>
 
-    <section id="quiz">
-        <h2>Quiz Sustentável</h2>
+        <div class="stat-box">
+            <h3>Soil Protected</h3>
+            <span>89%</span>
+        </div>
+    </div>
+</section>
 
-        <p>
-            Qual prática ajuda a preservar o meio ambiente?
-        </p>
+<!-- TECHNOLOGY -->
+<section id="technology">
+    <h2>Smart Farming Technology</h2>
 
-        <button onclick="resposta('correta')">
-            Plantio Direto
-        </button>
+    <div class="cards">
 
-        <button onclick="resposta('errada')">
-            Desmatamento
-        </button>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+            <h3>Drones</h3>
+            <p>Precision monitoring of crops.</p>
+        </div>
 
-        <p id="resultado"></p>
-    </section>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581093458791-9d42e3b4c3d4">
+            <h3>Sensors</h3>
+            <p>Soil and humidity control.</p>
+        </div>
 
-    <footer>
-       <footer>
-     <p>© 2026 AgroFuturo - Projeto Agrinho</p>
-    <p class="agrinho-tag">#Agrinho2026 🌱</p>
-    </footer>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602526210668-7a3f0c2c3f0a">
+            <h3>AI Systems</h3>
+            <p>Smart agricultural decisions.</p>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b">
+            <h3>Automation</h3>
+            <p>Modern agricultural robotics.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+    <h2>Sustainable Agriculture Quiz</h2>
+
+    <div class="quiz-container">
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <h3 id="question-number"></h3>
+        <h2 id="question"></h2>
+
+        <div id="answers"></div>
+
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+
+        <div id="finalResult"></div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 AgroFuture - Sustainable Power</p>
+    <p class="tag-footer">#Agrinho 2026 🌱</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
