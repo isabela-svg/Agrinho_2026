@@ -1,3 +1,4 @@
+#Agrinho_2026 — Resumo do Projeto AgroFuturo 2026
 O site AgroFuturo 2026 é um projeto educativo sobre agricultura sustentável e o uso da tecnologia no campo.
 
 Ele foi desenvolvido com HTML, CSS e JavaScript, que juntos formam a base de sites na internet. O HTML organiza o conteúdo da página, o CSS cuida do visual e do design, deixando tudo mais bonito e responsivo, e o JavaScript adiciona interatividade, como o modo escuro, o contador animado e o quiz.
