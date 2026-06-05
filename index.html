@@ -1,59 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agro Forte - Futuro Sustentável</title>
-
-  <link rel="stylesheet" href="style.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
 
-<header>
-  <h1>🌱 Agro Forte</h1>
+    <header>
+        <nav>
+            <h2>Agro Sustentável</h2>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#dados">Dados</a>
-    <a href="#graficos">Gráficos</a>
-  </nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#vantagens">Vantagens</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#acoes">Ações</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <button id="toggleTheme">🌗 Tema</button>
-</header>
+    <section class="hero" id="inicio">
+        <h1>AGRO FORTE, FUTURO SUSTENTÁVEL</h1>
+        <p>
+            Equilíbrio entre produção agrícola e preservação ambiental para
+            garantir um futuro melhor para todos.
+        </p>
+        <button onclick="saibaMais()">Saiba Mais</button>
+    </section>
 
-<section class="hero">
-  <h2>O Futuro do Agro é Sustentável</h2>
-  <p>
-    Tecnologia, inovação e respeito à natureza para um agronegócio mais forte e inteligente.
-  </p>
-</section>
+    <section class="vantagens" id="vantagens">
+        <h2>NOSSAS VANTAGENS</h2>
 
-<section id="sobre" class="cards">
-  <div class="card">🌾 Produção inteligente com tecnologia</div>
-  <div class="card">💧 Uso eficiente da água</div>
-  <div class="card">🌎 Redução de impacto ambiental</div>
-</section>
+        <div class="cards">
+            <div class="card">
+                <h3>🌱 Sustentabilidade</h3>
+                <p>Produção consciente com respeito à natureza.</p>
+            </div>
 
-<section id="dados" class="stats">
-  <div class="box">+45% eficiência agrícola</div>
-  <div class="box">-30% consumo de água</div>
-  <div class="box">+60% sustentabilidade</div>
-</section>
+            <div class="card">
+                <h3>💧 Uso Responsável</h3>
+                <p>Economia e preservação dos recursos hídricos.</p>
+            </div>
 
-<section id="graficos" class="charts">
-  <canvas id="prodChart"></canvas>
-  <canvas id="envChart"></canvas>
-</section>
+            <div class="card">
+                <h3>🌾 Alta Produção</h3>
+                <p>Tecnologia para aumentar a produtividade.</p>
+            </div>
 
-<footer>
-  <p>© 2026 Agro Forte</p>
-</footer>
+            <div class="card">
+                <h3>♻️ Preservação</h3>
+                <p>Proteção da biodiversidade e do solo.</p>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js"></script>
+    <section class="sobre" id="sobre">
+        <div class="texto">
+            <h2>SOBRE O PROJETO</h2>
+
+            <p>
+                O agronegócio é fundamental para a economia brasileira,
+                mas precisa crescer de forma sustentável. Nosso objetivo é
+                mostrar como a tecnologia, a inovação e a responsabilidade
+                ambiental podem caminhar juntas.
+            </p>
+        </div>
+
+        <div class="imagem">
+            🌳🚜🌾
+        </div>
+    </section>
+
+    <section class="acoes" id="acoes">
+        <h2>AÇÕES SUSTENTÁVEIS</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Energia Limpa</h3>
+            </div>
+
+            <div class="card">
+                <h3>Reflorestamento</h3>
+            </div>
+
+            <div class="card">
+                <h3>Reciclagem</h3>
+            </div>
+
+            <div class="card">
+                <h3>Agricultura de Precisão</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="estatisticas">
+        <h2>NOSSOS RESULTADOS</h2>
+
+        <div class="graficos">
+            <div>
+                <span id="num1">0</span>%
+                <p>Redução de Desperdício</p>
+            </div>
+
+            <div>
+                <span id="num2">0</span>%
+                <p>Uso de Energia Renovável</p>
+            </div>
+
+            <div>
+                <span id="num3">0</span>%
+                <p>Proteção Ambiental</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>FALE CONOSCO</h2>
+
+        <form>
+            <input type="text" placeholder="Seu nome">
+
+            <input type="email" placeholder="Seu e-mail">
+
+            <textarea placeholder="Sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Agro Forte, Futuro Sustentável</p>
+    </footer>
 
 </body>
 </html>

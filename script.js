@@ -1,43 +1,28 @@
-// BOTÃO TEMA
-const btn = document.getElementById("toggleTheme");
+function saibaMais() {
+    document.getElementById("sobre")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
+}
 
-btn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
+function animarNumero(id, valorFinal) {
+    let numero = 0;
 
+    let intervalo = setInterval(() => {
 
-// GRÁFICO PRODUÇÃO
-new Chart(document.getElementById("prodChart"), {
-  type: "bar",
-  data: {
-    labels: ["Soja", "Milho", "Café", "Trigo"],
-    datasets: [{
-      label: "Produção",
-      data: [120, 180, 90, 140],
-      backgroundColor: "#2ecc71"
-    }]
-  },
-  options: {
-    plugins: { legend: { labels: { color: "white" } } },
-    scales: {
-      x: { ticks: { color: "white" } },
-      y: { ticks: { color: "white" } }
-    }
-  }
-});
+        numero++;
 
+        document.getElementById(id).innerText = numero;
 
-// GRÁFICO SUSTENTABILIDADE
-new Chart(document.getElementById("envChart"), {
-  type: "doughnut",
-  data: {
-    labels: ["Sustentável", "Em progresso", "Crítico"],
-    datasets: [{
-      data: [70, 20, 10],
-      backgroundColor: ["#2ecc71", "#f1c40f", "#e74c3c"]
-    }]
-  },
-  options: {
-    plugins: { legend: { labels: { color: "white" } } }
-  }
-});
+        if(numero >= valorFinal){
+            clearInterval(intervalo);
+        }
+
+    }, 30);
+}
+
+window.onload = () => {
+    animarNumero("num1", 45);
+    animarNumero("num2", 70);
+    animarNumero("num3", 90);
+};
