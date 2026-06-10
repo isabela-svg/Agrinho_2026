@@ -23,3 +23,9 @@ form.addEventListener('submit', e=>{
     alert('Mensagem enviada com sucesso!');
     form.reset();
 });
+
+// Efeito suave para Hero
+window.addEventListener("load", () => {
+    const hero = document.querySelector(".overlay");
+    hero.style.opacity = "0";
+    hero.style
