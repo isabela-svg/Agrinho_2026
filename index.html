@@ -3,138 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
+    <title>Agro Forte - Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-
+    <!-- Cabeçalho -->
     <header>
+        <div class="logo">Agro Forte</div>
         <nav>
-            <h2>Agro Verde Brasil</h2>
-
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#vantagens">Vantagens</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#acoes">Ações</a></li>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+        <button class="btn-consulta">Solicitar Consultoria</button>
     </header>
 
-    <section class="hero" id="inicio">
-        <h1>AGRO FORTE, FUTURO SUSTENTÁVEL</h1>
-        <p>
-            Equilíbrio entre produção agrícola e preservação ambiental para
-            garantir um futuro melhor para todos.
-        </p>
-        <button onclick="saibaMais()">Saiba Mais</button>
-    </section>
-
-    <section class="vantagens" id="vantagens">
-        <h2>NOSSAS VANTAGENS</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>🌱 Sustentabilidade</h3>
-                <p>Produção consciente com respeito à natureza.</p>
-            </div>
-
-            <div class="card">
-                <h3>💧 Uso Responsável</h3>
-                <p>Economia e preservação dos recursos hídricos.</p>
-            </div>
-
-            <div class="card">
-                <h3>🌾 Alta Produção</h3>
-                <p>Tecnologia para aumentar a produtividade.</p>
-            </div>
-
-            <div class="card">
-                <h3>♻️ Preservação</h3>
-                <p>Proteção da biodiversidade e do solo.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="overlay">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>Produzindo mais, preservando melhor e construindo um futuro responsável para as próximas gerações.</p>
+            <div class="hero-buttons">
+                <button>Conheça Nossas Soluções</button>
+                <button>Fale Conosco</button>
             </div>
         </div>
     </section>
 
-    <section class="sobre" id="sobre">
-        <div class="texto">
-            <h2>SOBRE O PROJETO</h2>
-
-            <p>
-                O agronegócio é fundamental para a economia brasileira,
-                mas precisa crescer de forma sustentável. Nosso objetivo é
-                mostrar como a tecnologia, a inovação e a responsabilidade
-                ambiental podem caminhar juntas.
-            </p>
-        </div>
-
-        <div class="imagem">
-            🌳🚜🌾
-        </div>
-    </section>
-
-    <section class="acoes" id="acoes">
-        <h2>AÇÕES SUSTENTÁVEIS</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Energia Limpa</h3>
-            </div>
-
-            <div class="card">
-                <h3>Reflorestamento</h3>
-            </div>
-
-            <div class="card">
-                <h3>Reciclagem</h3>
-            </div>
-
-            <div class="card">
+    <!-- Nossas Soluções -->
+    <section id="solucoes" class="solutions">
+        <h2>Nossas Soluções</h2>
+        <div class="solution-cards">
+            <div class="solution-card">
+                <img src="https://img.icons8.com/color/96/precision.png" alt="Agricultura de Precisão">
                 <h3>Agricultura de Precisão</h3>
+                <p>Otimização de recursos e aumento de produtividade utilizando tecnologia de ponta.</p>
+            </div>
+            <div class="solution-card">
+                <img src="https://img.icons8.com/color/96/environment.png" alt="Gestão Ambiental">
+                <h3>Gestão Ambiental</h3>
+                <p>Práticas sustentáveis que protegem o solo, água e biodiversidade.</p>
+            </div>
+            <div class="solution-card">
+                <img src="https://img.icons8.com/color/96/water.png" alt="Irrigação Inteligente">
+                <h3>Irrigação Inteligente</h3>
+                <p>Redução de desperdício de água e aumento da eficiência hídrica.</p>
+            </div>
+            <div class="solution-card">
+                <img src="https://img.icons8.com/color/96/solar-energy.png" alt="Energia Renovável">
+                <h3>Energia Renovável</h3>
+                <p>Uso de energia solar e outras fontes limpas para operações agrícolas.</p>
+            </div>
+            <div class="solution-card">
+                <img src="https://img.icons8.com/color/96/drone.png" alt="Monitoramento por Drones">
+                <h3>Monitoramento por Drones</h3>
+                <p>Mapeamento e controle eficiente da lavoura em tempo real.</p>
+            </div>
+            <div class="solution-card">
+                <img src="https://img.icons8.com/color/96/consultation.png" alt="Consultoria Técnica">
+                <h3>Consultoria Técnica Especializada</h3>
+                <p>Assessoria profissional para melhorar processos e resultados agrícolas.</p>
             </div>
         </div>
     </section>
 
-    <section class="estatisticas">
-        <h2>NOSSOS RESULTADOS</h2>
-
-        <div class="graficos">
-            <div>
-                <span id="num1">0</span>%
-                <p>Redução de Desperdício</p>
+    <!-- Diferenciais -->
+    <section class="differentials">
+        <h2>Nossos Diferenciais</h2>
+        <div class="diff-cards">
+            <div class="diff-card">
+                <img src="https://img.icons8.com/color/48/certificate.png" alt="Sustentabilidade Certificada">
+                <h3>Sustentabilidade Certificada</h3>
             </div>
-
-            <div>
-                <span id="num2">0</span>%
-                <p>Uso de Energia Renovável</p>
+            <div class="diff-card">
+                <img src="https://img.icons8.com/color/48/technology.png" alt="Tecnologia Avançada">
+                <h3>Tecnologia Avançada</h3>
             </div>
-
-            <div>
-                <span id="num3">0</span>%
-                <p>Proteção Ambiental</p>
+            <div class="diff-card">
+                <img src="https://img.icons8.com/color/48/growth.png" alt="Alta Produtividade">
+                <h3>Alta Produtividade</h3>
+            </div>
+            <div class="diff-card">
+                <img src="https://img.icons8.com/color/48/environment.png" alt="Responsabilidade Ambiental">
+                <h3>Responsabilidade Ambiental</h3>
             </div>
         </div>
     </section>
 
-    <section class="contato" id="contato">
-        <h2>FALE CONOSCO</h2>
+    <!-- Projetos em Destaque -->
+    <section id="projetos" class="projects">
+        <h2>Projetos em Destaque</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80" alt="Recuperação de Áreas Degradadas">
+                <h3>Recuperação de Áreas Degradadas</h3>
+                <p>Transformando terrenos danificados em áreas produtivas e sustentáveis.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Produção Sustentável de Grãos">
+                <h3>Produção Sustentável de Grãos</h3>
+                <p>Técnicas modernas que aumentam a produção com menor impacto ambiental.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80" alt="Sistemas Integrados de Irrigação">
+                <h3>Sistemas Integrados de Irrigação</h3>
+                <p>Eficiência hídrica combinada com monitoramento avançado para o cultivo.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?auto=format&fit=crop&w=800&q=80" alt="Energia Solar para Propriedades">
+                <h3>Energia Solar para Propriedades Rurais</h3>
+                <p>Energia limpa e renovável para reduzir custos e impacto ambiental.</p>
+            </div>
+        </div>
+    </section>
 
-        <form>
-            <input type="text" placeholder="Seu nome">
+    <!-- Por Que Escolher -->
+    <section id="sobre" class="why-choose">
+        <img src="https://images.unsplash.com/photo-1573497019411-9ec847b3e7df?auto=format&fit=crop&w=600&q=80" alt="Especialista Agro">
+        <div class="why-text">
+            <h2>Por Que Escolher a Agro Forte?</h2>
+            <p>Com anos de experiência no setor agrícola, oferecemos soluções inovadoras que aumentam a produtividade e respeitam o meio ambiente.</p>
+            <p>Nossa equipe de especialistas utiliza tecnologia de ponta e práticas sustentáveis para garantir resultados consistentes e confiáveis para nossos clientes.</p>
+        </div>
+    </section>
 
-            <input type="email" placeholder="Seu e-mail">
+    <!-- Estatísticas -->
+    <section class="stats">
+        <div class="stat" data-target="500">0<p>Clientes Atendidos</p></div>
+        <div class="stat" data-target="200">0<p>Projetos Realizados</p></div>
+        <div class="stat" data-target="95">0<p>Satisfação</p></div>
+        <div class="stat" data-target="10">0<p>Anos de Experiência</p></div>
+    </section>
 
-            <textarea placeholder="Sua mensagem"></textarea>
-
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="tel" placeholder="Telefone" required>
+            <textarea placeholder="Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
+    <!-- Rodapé -->
     <footer>
-        <p>© 2026 Agro Forte, Futuro Sustentável</p>
+        <div>
+            <h3>Sobre a Agro Forte</h3>
+            <p>Agro Forte é líder em soluções agrícolas sustentáveis, integrando tecnologia e preservação ambiental.</p>
+        </div>
+        <div>
+            <h3>Links Rápidos</h3>
+            <a href="#hero">Início</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <div>
+            <h3>Contato</h3>
+            <p>Telefone: (00) 1234-5678</p>
+            <p>Email: contato@agroforte.com</p>
+            <p>Endereço: Rua do Campo, 123, Brasil</p>
+        </div>
+        <div>
+            <h3>Redes Sociais</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">YouTube</a>
+        </div>
+        <p>© 2025 Agro Forte. Todos os direitos reservados. | Política de Privacidade | Termos de Uso</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
